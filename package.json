@@ -1,0 +1,25 @@
+{
+  "name": "redis-cluster-node-test",
+  "version": "1.0.0",
+  "description": "Redis cluster node test on AWS",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=local node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davikawasaki/redis-cluster-node-test.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davikawasaki/redis-cluster-node-test/issues"
+  },
+  "homepage": "https://github.com/davikawasaki/redis-cluster-node-test#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ioredis": "^4.16.1",
+    "node-cron": "^2.0.3",
+    "pm2": "^4.2.3"
+  }
+}

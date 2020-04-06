@@ -1,2 +1,3 @@
-# redis-cluster-node-test
-Redis cluster node test on AWS
+# Redis Cluster Example
+
+Redis cluster example test using NodeJS, PM2 and IORedis.
