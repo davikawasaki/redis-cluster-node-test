@@ -7,6 +7,10 @@ const options = {
   password: process.env.REDIS_PASSWORD || '',
   connectTimeout: 10000, // in milliseconds
 };
+
+// Allow tunneling only on production, which is mandatory for Elasticache
+if (process.env.REDIS_TLS) options.tls = { checkServerIdentity: () => undefined };
+
 let _client;
 
 const setClient = () => {
